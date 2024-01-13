@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    margin: auto;
+    padding-top: 10px;
+    background-color: rgb(226, 242, 226);
+    color:rgb(54, 24, 24)
+}
+
+#navbar{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 6px;
+}
+
+#nav-contents{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border:1px solid aqua;
+    padding: 0.3em;
+    border-radius: 8px;
+    color: rgb(54, 24, 24);
+}
+
+#nav-contents ul{
+    display: flex;
+    justify-content: center;
+}
+
+.elem{
+    list-style: none;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#nav-contents ul li a{
+    text-decoration: none;
+    color: rgb(54, 24, 24);
+}
+
+#nav-contents ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(195, 111, 111);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#nav-contents ul li a:hover::after{
+    width: 100%;
+}
+
+.nav-sub{
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-sub i{
+    padding-left: 1em;
+}
+
+.nav-sub p{
+    font-size: 10px;
+}
+
+.icon{
+    padding-left: 1em;
+}
+
+#first{
+    height: 60vh;
+}
+
+.container{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding-top: 3em;
+}
+
+#imgHalf img{
+    width: 40vw;
+    border-radius: 10px;
+}
+
+#contentHalf{
+    border: 1px solid #ebc3c3;
+    padding: 1.5em;
+    margin-left: 2em;
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
+}
+
+#contentHalf:hover{
+    box-shadow: 3px 3px rgb(120, 90, 90);
+}
+
+#genInfo{
+    line-height: 2em;
+}
+
+#genInfo h1{
+    font-weight: bold;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    border: 1px solid brown;
+    padding-left: 1em;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.rating p{
+    padding-left: 1em;
+}
+
+#price{
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#off{
+    font-weight: bold;
+    color: green;
+}
+
+#sizes{
+    margin-top: 10px;
+}
+
+#sizes ul{
+    display: flex;
+    list-style: none;
+}
+
+#sizes ul li{
+    width: 40px;
+    /* height: 40px; */
+    border-radius: 50%;
+    border: 1px solid rgb(58, 16, 16);
+    text-align: center;
+    margin-left: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px #27270a;
+}
+
+#sizes ul li:hover{
+    color: white;
+    background-color: red;
+}
+
+.sizes1{
+    margin-top: 1.5em;
+}
+
+#buttons{
+    margin-top: 2em;
+    display: flex;
+
+}
+
+#buttons button{
+    padding: 1em;
+    margin-left: 1em;
+    color: black;
+    background-color: rgb(194, 182, 160);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#buttons button:hover{
+    color: white;
+    background-color: #27270a;
+}
+
+#second{
+    margin-top: 3em;
+    line-height: 2em;
+}
+
+#prod p{
+    padding-top: 1em;
+}
+
+#prod ul{
+    list-style: none;
+    padding-top: 1.2em;
+}
+
+.specs{
+    display: inline-block;
+    border: 1px solid #e9d5d5;
+    padding: 2em;
+    margin-top: 1.8em;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(141, 141, 128);
+}
+
+.Offers{
+    border: 1px solid #e9d5d5;
+    padding: 2em;
+    margin-top: 1.8em;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(141, 141, 128);
+}
+
+#off1{
+    display: inline-block;
+}
+
+@media only screen and (max-width:950px){
+    #navbar{
+        flex-direction: column;
+    }
+
+    #logo{
+        text-align: center;
+    }
+
+    #nav-contents{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.2em;
+    }
+
+    .nav-sub{
+        padding-top: 1.2em;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:810px){
+  .container{
+    flex-direction: column;
+  }
+
+  #second{
+    margin-top: 22em;
+  }
+
+  #imgHalf img{
+    width: 370px;
+  }
+
+  #contentHalf{
+    margin-top: 1em;
+  }
+}
